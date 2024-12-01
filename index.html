@@ -3,108 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Antri - Professional Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <title>Ahmed Antri - Electrical Engineer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <div class="header-container">
-            <h1>Ahmed Antri</h1>
-            <p>Electrical Engineer | Embedded Systems Specialist</p>
-            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
-        </div>
+        <h1>Ahmed Antri</h1>
+        <p>Electrical Engineer | Embedded Systems | IoT</p>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
     </header>
 
+    <!-- About Me Section -->
     <section id="about">
-        <div class="section-container">
-            <h2>About Me</h2>
-            <p>
-                I am an Electrical Engineer specializing in Embedded Systems. I hold a Bachelor's degree in Automation and Industrial IT, and I am currently pursuing a degree in Electrical Engineering with a specialization in Embedded Systems. 
-                I have worked on various hands-on projects in system design, integration, and automation. Passionate about developing hardware-software integrated solutions, I aim to contribute to innovative projects in IoT, robotics, and automation.
-            </p>
-        </div>
+        <h2>About Me</h2>
+        <p>Electrical engineer specializing in embedded systems. Holder of a Bachelor's degree in Automation and Industrial IT, I have gained practical and technical skills through hands-on projects in system design, integration, and automation. Passionate about developing hardware-software integrated solutions, I am seeking a dynamic environment where I can leverage my expertise to contribute to innovative projects and enhance my skills in embedded systems and IoT.</p>
     </section>
 
-    <section id="education">
-        <div class="section-container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Electrical Engineering Degree (in progress)</strong> - EPI Polytechnique, Sousse</li>
-                <li><strong>Bachelor’s Degree in Automation and Industrial IT</strong> - ISET Béja, Graduated in 2022</li>
-                <li><strong>High School Diploma</strong> - Lycée 2 Mars Korba, Graduated in 2018</li>
-            </ul>
-        </div>
-    </section>
-
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="section-container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Embedded Systems Development: Arduino, Raspberry Pi, ESP32, and microcontrollers for IoT and automation</li>
-                <li>Programming: Proficient in C/C++, Python, and MATLAB/Simulink for embedded software and control systems</li>
-                <li>Industrial Automation: Experienced in TIA Portal, STEP 7, GRAFCET, and Ladder for industrial process control</li>
-                <li>IoT Protocols: Knowledge of UART, I2C, CAN, ZigBee, Bluetooth, Wi-Fi, Sigfox, and IoT network simulations</li>
-                <li>Hardware Design: PCB design, microcontroller programming (STM32, PIC, ARM Cortex), and sensor integration</li>
-                <li>Project Management & Documentation: Expertise in technical documentation and solution design</li>
-                <li>Languages: Fluent in English and French</li>
-            </ul>
-        </div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Embedded Systems: Arduino, Raspberry Pi, ESP32, STM32</li>
+            <li>Programming: C/C++, Python, MATLAB/Simulink</li>
+            <li>Hardware: PCB Design, Microcontrollers (ARM, PIC, AVR)</li>
+            <li>IoT: UART, I2C, CAN, ZigBee, Bluetooth</li>
+            <li>Automation: TIA Portal, STEP 7, GRAFCET</li>
+            <li>Simulation: LabVIEW, Proteus</li>
+        </ul>
     </section>
 
-    <section id="certifications">
-        <div class="section-container">
-            <h2>Certifications</h2>
-            <ul>
-                <li><strong>Microsoft Excel Specialist Certification</strong> (2023) - Advanced Excel skills for data management and analysis</li>
-            </ul>
-        </div>
-    </section>
-
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="section-container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-card">
-                    <h3>Water Level Regulation at Zgolli Frères</h3>
-                    <p>Integrated and configured sensors for liquid level measurement, and developed an automated control system for maintaining constant fluid levels in sauce production.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Speed Controller for Stepper Motor at COMMECA</h3>
-                    <p>Designed and developed a speed controller with control and power circuits, programmed in C for precise speed regulation and system testing.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Lifting and Moving System at KEMA SARL</h3>
-                    <p>Developed an automated lifting system for heavy loads, integrating sensors for position detection and motion control for enhanced safety and efficiency.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Time Tracking System with Fingerprint Recognition</h3>
-                    <p>Designed and implemented a time-tracking system using fingerprint recognition, integrating biometric sensors with an employee database and a user-friendly interface for registration.</p>
-                </div>
-            </div>
-        </div>
+        <h2>Projects</h2>
+        <ul>
+            <li>Water Level Regulation at Zgolli Frères</li>
+            <li>Speed Controller for Stepper Motor at COMMECA</li>
+            <li>Lifting and Moving System at KEMA SARL</li>
+        </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="section-container">
-            <h2>Contact Me</h2>
-            <form id="contact-form" action="mailto:ahmedantri1999@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+        <h2>Contact</h2>
+        <p>Email: ahmedantri1999@gmail.com</p>
+        <p>Phone: +216 26501331</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ahmed-antri-7144482ba" target="_blank">linkedin.com/in/ahmed-antri-7144482ba</a></p>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Contact: <a href="mailto:ahmedantri1999@gmail.com">ahmedantri1999@gmail.com</a> | LinkedIn: <a href="https://linkedin.com/in/ahmed-antri-7144482ba">linkedin.com/in/ahmed-antri-7144482ba</a></p>
+        <p>&copy; 2024 Ahmed Antri. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
