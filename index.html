@@ -3,29 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Antri - Portfolio</title>
+    <title>Ahmed Antri - Professional Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Ahmed Antri</h1>
+            <p>Electrical Engineer | Embedded Systems</p>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+        </div>
     </header>
-    <main>
-        <section class="hero">
-            <img src="images/banner.jpg" alt="Banner" />
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my skills, projects, and professional journey.</p>
-        </section>
-    </main>
+
+    <section id="about">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/ahmed-photo.jpg" alt="Ahmed Antri" class="profile-img">
+                <p>Electrical engineer specializing in embedded systems, hardware-software integration, industrial automation, and IoT. Passionate about creating innovative solutions and enhancing my skills in the tech field.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-container">
+            <h2>Education</h2>
+            <ul>
+                <li>Electrical Engineering Degree, EPI Polytechnique (In progress)</li>
+                <li>Bachelor’s Degree in Automation, ISET Béja</li>
+                <li>High School Diploma, Lycée 2 Mars Korba</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>Embedded Systems: Arduino, Raspberry Pi, ESP32</li>
+                    <li>Programming: C/C++, Python, MATLAB</li>
+                    <li>Industrial Automation: TIA Portal, STEP 7, GRAFCET</li>
+                    <li>IoT: IoT Protocols like UART, I2C, Bluetooth, Wi-Fi</li>
+                    <li>Hardware Design: PCB design, Microcontrollers (STM32, PIC)</li>
+                    <li>Project Management & Documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1" class="project-img">
+                    <h3>Water Level Regulation at Zgolli Frères</h3>
+                    <p>Automated control system for maintaining fluid levels in a production line. Integrated sensors and developed a control system for consistency in the production of sauce.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-img">
+                    <h3>Speed Controller for Stepper Motor at COMMECA</h3>
+                    <p>Designed and developed a speed controller with a control and power circuit, programmed in C for precise speed regulation.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project3.jpg" alt="Project 3" class="project-img">
+                    <h3>Lifting and Moving System at KEMA SARL</h3>
+                    <p>Developed an automated lifting system for heavy loads using precise motion control with sensors for enhanced safety and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="mailto:ahmedantri1999@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Ahmed Antri. All Rights Reserved.</p>
+        <p>Contact: <a href="mailto:ahmedantri1999@gmail.com">ahmedantri1999@gmail.com</a> | LinkedIn: <a href="https://linkedin.com/in/ahmed-antri-7144482ba">linkedin.com/in/ahmed-antri-7144482ba</a></p>
     </footer>
 </body>
 </html>

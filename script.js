@@ -1,8 +1,10 @@
-// Carousel scrolling
-const carousel = document.querySelector('.carousel');
-carousel.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    carousel.scrollBy({
-        left: e.deltaY < 0 ? -200 : 200,
-    });
-});
+let darkMode = false;
+
+function toggleDarkMode() {
+    darkMode = !darkMode;
+    if (darkMode) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+}
