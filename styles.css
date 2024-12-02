@@ -1,87 +1,64 @@
-/* Resetting some default styles */
-* {
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-image: url('../images/background-home.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body background image */
-body {
-    background-image: url('images/background.jpg');
-    background-size: cover; /* Ensures image covers the full viewport */
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #333;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
     color: white;
-}
-
-header {
-    text-align: center;
-    padding: 100px 0;
-    color: white;
-}
-
-header h1 {
-    font-size: 50px;
-}
-
-header p {
-    font-size: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    font-size: 18px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #0066cc;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+  }
+  
+  .section {
+    padding: 50px 20px;
     text-align: center;
-}
+    background: #fff;
+    margin-bottom: 20px;
+  }
+  
+  #about {
+    background-image: url('../images/background-about.jpg');
+    color: white;
+  }
+  
+  #skills {
+    background-image: url('../images/background-skills.jpg');
+  }
+  
+  #projects {
+    background-image: url('../images/background-projects.jpg');
+  }
+  
+  #contact {
+    background-image: url('../images/background-contact.jpg');
+    color: white;
+  }
+  
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
